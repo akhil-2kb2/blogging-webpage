@@ -1,6 +1,6 @@
-# ✍️ – Blog Platform with Secure Authentication
+# ✍️  – Blog Platform with Secure Authentication
 
-A sleek and modern full-stack **MERN** blogging platform designed for secure and smooth content creation. Featuring **OTP-based signup**, **Google OAuth login**, **image upload via AWS S3**, and a fully responsive interface.
+A modern full-stack **MERN** blog platform designed for secure and seamless content creation. Features **OTP-based signup**, **Google OAuth login**, **image uploads to AWS S3**, and a sleek, responsive interface.
 
 ---
 
@@ -9,33 +9,40 @@ A sleek and modern full-stack **MERN** blogging platform designed for secure and
 - **Frontend**: React.js · Tailwind CSS · Firebase (Google OAuth)
 - **Backend**: Node.js · Express.js · MongoDB
 - **Authentication**: OTP via AbstractAPI · Firebase OAuth
-- **Storage**: AWS S3 (for images)
+- **Storage**: AWS S3 (for image uploads)
 
 ---
 
-## 🔐 Features
+## 🔐 Key Features
 
 - ✅ Secure OTP-based Email Signup
-- 🔐 Google OAuth Login with Firebase
+- 🔐 Google OAuth Login via Firebase
 - 📝 Create, Edit, and Delete Blog Posts
 - 🖼️ Upload Blog Images to AWS S3
-- 📑 Multi-step Signup Flow: Full Name → Email → Password → OTP
-- 🧠 State Management with React Context API
+- 📑 Multi-step Signup Flow (Name → Email → Password → OTP)
 - 📱 Fully Responsive UI (Mobile & Desktop)
-- 💾 Clean and scalable folder structure
+- 🧠 State Management with React Context API
+- 💡 Clean, scalable, feature-based folder structure
 
 ---
 
-## 📊 Database Design
+## 📊 Data & Design Planning
 
-- Designed using **ER Diagram**, **Relational Model**, and **MongoDB Schema**
-- Collections:
-  - `Users`: name, email, password, verified, etc.
-  - `Blogs`: title, content, authorId, imageURL, timestamps
+Although **MongoDB is schema-less**, proper planning was done to ensure organized, scalable data storage:
+
+- ✅ Designed **ER Diagram** and **Relational Mapping** for Users & Blogs  
+- ✅ Defined **Document Schema Structure** before implementation  
+- ✅ Planned data relationships (Referencing for users, blogs, images)  
+- ✅ Used schema validation via **Mongoose** models
+
+### 📂 Collections Overview
+
+- `users`: name, email, password, isVerified, createdAt, etc.
+- `blogs`: title, content, imageUrl, authorId (ref), timestamps
 
 ---
 
-## 📂 Folder Structure (Simplified)
+## 🗂 Folder Structure (Simplified)
 
 ```bash
 DevScribe/
