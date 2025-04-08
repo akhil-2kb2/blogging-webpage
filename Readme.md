@@ -1,20 +1,53 @@
-# Fullstack MERN Blogging Website
+# ✍️ DevScribe – Blog Platform with Secure Authentication
 
+A sleek and modern full-stack **MERN** blogging platform designed for secure and smooth content creation. Featuring **OTP-based signup**, **Google OAuth login**, **image upload via AWS S3**, and a fully responsive interface.
 
+---
 
-This website features include -
-1. Modern Blog Editor using Editor JS.
-2. Google Authentication for Users
-3. Dynamic Blog Pages on dynamic urls.
-4. Search Page for Searching Blogs & users.
-5. Dedicated Users Profile with thier social links and written blogs.
-6. Dedicated dashboard to manage blogs either published or draft.
-7. Blog Post Analytics, editable and deletable.
-8. Like interaction on Blogs with feature to comment on the blog.
-9. Reply to comments. ( A nested Comment System )
-10. Every interaction on site stores as a notification for their respective users.
-11. Recent notification highlight separating them from old notifications.
-12. Edit profile option to update social links, bio and username
-13. Also user can change login password from settings.
-14. Its mobile responsive with modern design + fade in animation on pages.
-And much more.
+## 🚀 Tech Stack
+
+- **Frontend**: React.js · Tailwind CSS · Firebase (Google OAuth)
+- **Backend**: Node.js · Express.js · MongoDB
+- **Authentication**: OTP via AbstractAPI · Firebase OAuth
+- **Storage**: AWS S3 (for images)
+
+---
+
+## 🔐 Features
+
+- ✅ Secure OTP-based Email Signup
+- 🔐 Google OAuth Login with Firebase
+- 📝 Create, Edit, and Delete Blog Posts
+- 🖼️ Upload Blog Images to AWS S3
+- 📑 Multi-step Signup Flow: Full Name → Email → Password → OTP
+- 🧠 State Management with React Context API
+- 📱 Fully Responsive UI (Mobile & Desktop)
+- 💾 Clean and scalable folder structure
+
+---
+
+## 📊 Database Design
+
+- Designed using **ER Diagram**, **Relational Model**, and **MongoDB Schema**
+- Collections:
+  - `Users`: name, email, password, verified, etc.
+  - `Blogs`: title, content, authorId, imageURL, timestamps
+
+---
+
+## 📂 Folder Structure (Simplified)
+
+```bash
+DevScribe/
+├── client/              # React.js frontend
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   └── utils/
+├── server/              # Node.js backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   └── middleware/
+├── README.md
+└── .env
