@@ -1,4 +1,4 @@
-# ✍️ DevScribe – Blog Platform with Secure Authentication
+# ✍️ – Blog Platform with Secure Authentication
 
 A sleek and modern full-stack **MERN** blogging platform designed for secure and smooth content creation. Featuring **OTP-based signup**, **Google OAuth login**, **image upload via AWS S3**, and a fully responsive interface.
 
